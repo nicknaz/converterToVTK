@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: dedede;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Controller">
+   <children>
+      <MenuBar prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: #fff;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Файл">
+               <items>
+                  <MenuItem fx:id="openMenuBtn" mnemonicParsing="false" text="Открыть" />
+                  <MenuItem fx:id="closeMenuBtn" mnemonicParsing="false" text="Закрыть" />
+               </items>
+            </Menu>
+            <Menu fx:id="helpBtn" mnemonicParsing="false" text="Справка">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="openDataFileBtn" layoutX="26.0" layoutY="41.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="252.0" style="-fx-background-color: #fff; -fx-background-radius: 15;" text="Открыть файл с данными">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Button>
+      <Separator layoutX="295.0" layoutY="25.0" orientation="VERTICAL" prefHeight="273.0" prefWidth="6.0" style="-fx-background-color: #fff;" />
+      <Button fx:id="convertBtn" layoutX="317.0" layoutY="41.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="259.0" style="-fx-background-color: #fff; -fx-background-radius: 15;" text="Конвертировать">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Button>
+      <Label fx:id="label1" layoutX="26.0" layoutY="123.0" prefHeight="37.0" prefWidth="252.0" text="...">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Label>
+      <Label fx:id="label2" layoutX="26.0" layoutY="162.0" prefHeight="37.0" prefWidth="252.0" text="...">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Label>
+      <Label fx:id="label3" layoutX="322.0" layoutY="123.0" prefHeight="37.0" prefWidth="252.0" text="...">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Label>
+      <Label fx:id="label4" layoutX="322.0" layoutY="162.0" prefHeight="37.0" prefWidth="252.0" text="...">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Label>
+      <Label fx:id="label5" layoutX="320.0" layoutY="199.0" prefHeight="37.0" prefWidth="252.0" text="...">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Label>
+      <Separator layoutX="-2.0" layoutY="298.0" prefHeight="3.0" prefWidth="607.0" style="-fx-background-color: #fff;" />
+      <Button fx:id="btnView" layoutX="26.0" layoutY="311.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="252.0" style="-fx-background-color: #fff; -fx-background-radius: 15;" text="Предпросмотр&#10;изначального&#10; объекта" textAlignment="CENTER">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnViewResults" layoutX="317.0" layoutY="311.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="259.0" style="-fx-background-color: #fff; -fx-background-radius: 15;" text="Предпросмотр&#10;результата&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></Button>
+      <CheckBox fx:id="isVoxels" layoutX="322.0" layoutY="91.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="252.0" text="Использовать воксели, вместо гексаэдров" wrapText="true">
+         <font>
+            <Font name="Webdings" size="14.0" />
+         </font>
+      </CheckBox>
+   </children>
+</Pane>

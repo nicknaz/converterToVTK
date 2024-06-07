@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: dedede;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.WelcomePageController">
+   <children>
+      <Label fx:id="filePath" layoutX="14.0" layoutY="23.0" prefHeight="34.0" prefWidth="420.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" text="..." textFill="#00300d">
+         <font>
+            <Font name="Webdings" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <Button fx:id="chooseFileBtn" layoutX="442.0" layoutY="23.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: #bababa; -fx-background-radius: 5;" text="Выбрать файл">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="continueBtn" cache="true" defaultButton="true" layoutX="442.0" layoutY="352.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: #bababa; -fx-background-radius: 5;" text="Продолжить">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="descriptionText" alignment="TOP_LEFT" layoutX="14.0" layoutY="71.0" prefHeight="316.0" prefWidth="420.0" style="-fx-background-radius: 5; -fx-background-color: #fff;">
+         <font>
+            <Font name="Webdings" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <ProgressIndicator fx:id="progressBar" layoutX="442.0" layoutY="71.0" prefWidth="117.0" />
+   </children>
+</Pane>
